@@ -11,7 +11,7 @@ const isMobile = window.innerWidth < 768;
 
 const DEFAULTS = {
     text: isMobile ? "FRESAS\nVICTORIA" : "FRESAS VICTORIA", // En móvil lo dividimos en 2 líneas
-    tint: "#ff4d85", 
+    tint: "#ff6f9d", 
     opacity: 12,
     bubbleSize: isMobile ? 5 : 14, // Burbujas mucho más finas en móvil
     density: isMobile ? 18 : 13,   // Más cantidad de burbujas para mayor resolución
@@ -161,7 +161,9 @@ class BubbleTypeScene {
     }
 
     handleInput() {
-        this.text = this.input.innerHTML;
+        this.text = this.cfg.text;
+        // Convertimos los saltos de línea a <br> para medir la caja correctamente
+        this.input.innerHTML = this.text.replace(/\n/g, "<br>");
         this.stringBox.wTexture = this.input.clientWidth;
         this.stringBox.wScene = this.stringBox.wTexture * SCALE_FACTOR;
         this.stringBox.hTexture = this.input.clientHeight;
@@ -192,7 +194,13 @@ class BubbleTypeScene {
         this.textCtx.font = `${S.fontStyle} ${S.weight} ${S.fontSize}px ${S.family}`;
         this.textCtx.fillStyle = "#ffffff";
         this.textCtx.clearRect(0, 0, this.textCanvas.width, this.textCanvas.height);
-        this.textCtx.fillText(this.text, 0, this.stringBox.hTexture * 0.8);
+        
+        // Soporte para dibujar múltiples líneas centrado
+        const lines = this.text.split("\n");
+        const lineCount = Math.max(1, lines.length);
+        for (let i = 0; i < lineCount; i++) {
+            this.textCtx.fillText(lines[i], 0, ((i + 0.8) * this.stringBox.hTexture) / lineCount);
+        }
 
         const w = this.textCanvas.width;
         const h = this.textCanvas.height;
