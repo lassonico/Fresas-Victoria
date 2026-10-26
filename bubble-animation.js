@@ -10,23 +10,22 @@ const EDGE_GLOW = 2.0;
 const isMobile = window.innerWidth < 768;
 
 const DEFAULTS = {
-    text: "FRESAS VICTORIA",
-    tint: "#ff4d85", // Color de tu marca
+    text: isMobile ? "FRESAS\nVICTORIA" : "FRESAS VICTORIA", // En móvil lo dividimos en 2 líneas
+    tint: "#ff4d85", 
     opacity: 12,
-    bubbleSize: isMobile ? 18 : 14, // Burbujas un poco más grandes en proporción al celular
-    density: isMobile ? 10 : 13,
+    bubbleSize: isMobile ? 5 : 14, // Burbujas mucho más finas en móvil
+    density: isMobile ? 18 : 13,   // Más cantidad de burbujas para mayor resolución
     speed: 8,
-    scatter: 10,
+    scatter: isMobile ? 3 : 10,    // Menos dispersión para que no se vea borroso
     hoverOn: true,
     hover: { radius: 9, lift: 8 },
     font: {
-        fontFamily: "Chewy, cursive", // Usamos la fuente de tu marca
-        fontSize: isMobile ? 35 : 80, // Letra más pequeña en móviles para que quepa en una línea
+        fontFamily: "Chewy, cursive", 
+        fontSize: isMobile ? 45 : 80, // Letra más grande y legible en 2 líneas
         fontWeight: 400,
         lineHeight: 1,
     }
 };
-
 function clamp(v, lo, hi, fallback) {
     const n = typeof v === "number" && isFinite(v) ? v : fallback;
     return Math.max(lo, Math.min(hi, n));
