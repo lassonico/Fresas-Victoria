@@ -21,7 +21,7 @@ const DEFAULTS = {
     hover: { radius: 9, lift: 8 },
     font: {
         fontFamily: "Chewy, cursive", 
-        fontSize: isMobile ? 45 : 80, // Letra más grande y legible en 2 líneas
+        fontSize: isMobile ? 70 : 80, // Letra más grande y legible en 2 líneas
         fontWeight: 400,
         lineHeight: 1,
     }
