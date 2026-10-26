@@ -38,6 +38,15 @@
             }
         }
     </script>
+    <!-- Import Map para Three.js -->
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.160.0/build/three.module.js"
+            }
+        }
+    </script>
+
 </head>
 <body class="antialiased">
 
@@ -66,6 +75,9 @@
             </button>
         </div>
     </header>
+
+    <!-- Animación 3D Bubble Text -->
+    <div id="bubble-container" class="w-full h-[200px] md:h-[350px] relative z-10 flex justify-center items-center overflow-hidden"></div>
 
     <!-- Category Navigation -->
     <nav class="container mx-auto px-4 py-6">
@@ -306,5 +318,6 @@
     </div>
 
     <script src="app.js"></script>
+    <script type="module" src="bubble-animation.js"></script>
 </body>
 </html>
