@@ -70,7 +70,7 @@ const WHATSAPP_NUMBER = "573248306455"; // Format with country code for link
                     name: 'Fresa Kiwi',
                     desc: 'Crema, 3 capas queso, 3 capas fresa, Kiwi',
                     sizes: [{name: '12 onzas', price: 20000}, {name: '16 onzas', price: 24000}],
-                    img: './productos/fresaKiwi.png'
+                    img: './productos/FresaKiwi.jpg'
                 },
                 {
                     id: 'f11',
