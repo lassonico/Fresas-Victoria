@@ -193,13 +193,18 @@ class BubbleTypeScene {
 
         this.textCtx.font = `${S.fontStyle} ${S.weight} ${S.fontSize}px ${S.family}`;
         this.textCtx.fillStyle = "#ffffff";
+        // 1. Alineamos el texto al centro del canvas
+        this.textCtx.textAlign = "center"; 
         this.textCtx.clearRect(0, 0, this.textCanvas.width, this.textCanvas.height);
         
-        // Soporte para dibujar múltiples líneas centrado
         const lines = this.text.split("\n");
         const lineCount = Math.max(1, lines.length);
+        // 2. Calculamos la mitad exacta del ancho
+        const centerX = this.textCanvas.width / 2; 
+
         for (let i = 0; i < lineCount; i++) {
-            this.textCtx.fillText(lines[i], 0, ((i + 0.8) * this.stringBox.hTexture) / lineCount);
+            // 3. Dibujamos el texto usando 'centerX' en lugar de 0
+            this.textCtx.fillText(lines[i], centerX, ((i + 0.8) * this.stringBox.hTexture) / lineCount);
         }
 
         const w = this.textCanvas.width;

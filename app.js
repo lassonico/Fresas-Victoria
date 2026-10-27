@@ -178,7 +178,7 @@ const WHATSAPP_NUMBER = "573248306455"; // Format with country code for link
             productsData[category].forEach((product, index) => {
                 const isEmoji = product.img === '🧇';
                 const imageHtml = isEmoji 
-                    ? `<div class="w-20 h-20 bg-dark-bg rounded-xl flex items-center justify-center text-4xl shadow-inner border border-white/5 flex-shrink-0">${product.img}</div>`
+                    ? `<div class="w-20 h-20 bg-gray-100 rounded-xl flex items-center justify-center text-4xl shadow-inner border border-white/5 flex-shrink-0">${product.img}</div>`
                     : `<img src="${product.img}" alt="${product.name}" class="w-20 h-20 object-cover rounded-xl shadow-md border border-white/10 flex-shrink-0" onerror="this.src='https://placehold.co/100x100/1e1e1e/ff4d85?text=FV'">`;
                 
                 const priceDisplay = product.sizes.length > 1 
@@ -186,11 +186,11 @@ const WHATSAPP_NUMBER = "573248306455"; // Format with country code for link
                     : `<span class="text-pink-brand font-bold text-lg">${formatPrice(product.sizes[0].price)}</span>`;
 
                 const cardHtml = `
-                    <div class="reveal bg-dark-card rounded-2xl p-4 flex gap-4 cursor-pointer hover:bg-[#252525] transition-colors border border-white/5 shadow-lg group" onclick="openProductModal('${category}', '${product.id}')" style="transition-delay: ${index * 50}ms">
+                    <div class="reveal bg-gray-100 rounded-2xl p-4 flex gap-4 cursor-pointer hover:bg-[#252525] transition-colors border border-white/5 shadow-lg group" onclick="openProductModal('${category}', '${product.id}')" style="transition-delay: ${index * 50}ms">
                         ${imageHtml}
                         <div class="flex-1 flex flex-col justify-center">
-                            <h3 class="font-chewy text-xl text-white group-hover:text-pink-brand transition-colors">${product.name}</h3>
-                            <p class="text-gray-400 text-xs mt-1 line-clamp-2 leading-tight">${product.desc}</p>
+                            <h3 class="font-chewy font-bold text-xl text-pink-brand group-hover:text-pink-brand transition-colors">${product.name}</h3>
+                            <p class="text-gray-600 text-xs mt-1 line-clamp-2 leading-tight">${product.desc}</p>
                             <div class="mt-2">
                                 ${priceDisplay}
                             </div>
@@ -216,12 +216,12 @@ const WHATSAPP_NUMBER = "573248306455"; // Format with country code for link
             
             // Update Buttons UI
             document.querySelectorAll('.cat-btn').forEach(btn => {
-                btn.classList.remove('bg-pink-brand', 'text-white', 'border-pink-light/30');
-                btn.classList.add('bg-dark-card', 'text-gray-300', 'border-white/5');
+                btn.classList.remove('bg-pink-brand', 'text-white', 'border-pink-light/30', 'shadow-lg');
+                btn.classList.add('bg-gray-200', 'text-gray-600', 'border-white/5', 'shadow-md');
             });
             const activeBtn = document.getElementById(`btn-cat-${category}`);
-            activeBtn.classList.remove('bg-dark-card', 'text-gray-300', 'border-white/5');
-            activeBtn.classList.add('bg-pink-brand', 'text-white', 'border-pink-light/30');
+            activeBtn.classList.remove('bg-gray-200', 'text-gray-600', 'border-white/5', 'shadow-md');
+            activeBtn.classList.add('bg-pink-brand', 'text-white', 'border-pink-light/30', 'shadow-lg');
 
             renderProducts(category);
         }
@@ -250,7 +250,7 @@ const WHATSAPP_NUMBER = "573248306455"; // Format with country code for link
             const imgEl = document.getElementById('modal-img');
             
             if (isEmoji) {
-                imgEl.outerHTML = `<div id="modal-img" class="w-32 h-32 rounded-2xl shadow-lg border-2 border-pink-brand/20 bg-dark-bg text-6xl flex items-center justify-center">${selectedProduct.img}</div>`;
+                imgEl.outerHTML = `<div id="modal-img" class="w-32 h-32 rounded-2xl shadow-lg border-2 border-pink-brand/20 bg-pink-brand text-6xl flex items-center justify-center">${selectedProduct.img}</div>`;
             } else {
                 imgEl.outerHTML = `<img id="modal-img" src="${selectedProduct.img}" alt="${selectedProduct.name}" class="w-32 h-32 object-cover rounded-2xl shadow-lg border-2 border-pink-brand/20 bg-dark-bg flex items-center justify-center" onerror="this.src='https://placehold.co/100x100/1e1e1e/ff4d85?text=FV'">`;
             }
@@ -277,12 +277,12 @@ const WHATSAPP_NUMBER = "573248306455"; // Format with country code for link
             
             selectedProduct.sizes.forEach((size, index) => {
                 const isSelected = index === selectedSizeIndex;
-                const activeClass = isSelected ? 'border-pink-brand bg-pink-brand/10 text-white' : 'border-white/10 bg-dark-input text-gray-400';
+                const activeClass = isSelected ? 'border-pink-brand bg-pink-brand/10 text-white' : 'border-white/10 bg-dark-input text-gray-200';
                 
                 const html = `
                     <button onclick="selectSize(${index})" class="border-2 rounded-xl p-3 text-center transition-colors ${activeClass}">
                         <div class="font-bold text-sm mb-1">${size.name}</div>
-                        <div class="text-xs ${isSelected ? 'text-pink-light' : 'text-gray-500'}">${formatPrice(size.price)}</div>
+                        <div class="text-xs ${isSelected ? 'text-pink-light' : 'text-gray-200'}">${formatPrice(size.price)}</div>
                     </button>
                 `;
                 sizesContainer.insertAdjacentHTML('beforeend', html);
