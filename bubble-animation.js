@@ -34,7 +34,7 @@ function clamp(v, lo, hi, fallback) {
 function settingsFor(cfg) {
     const font = cfg.font || {};
     return {
-        family: font.fontFamily || "system-ui, sans-serif",
+        family: font.fontFamily || "Poppins, sans-serif",
         fontSize: font.fontSize || 70,
         weight: font.fontWeight || 100,
         fontStyle: font.fontStyle || "normal",
