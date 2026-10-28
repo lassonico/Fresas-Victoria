@@ -179,7 +179,7 @@ const WHATSAPP_NUMBER = "573248306455"; // Format with country code for link
                 const isEmoji = product.img === '🧇';
                 const imageHtml = isEmoji 
                     ? `<div class="w-20 h-20 bg-gray-100 rounded-xl flex items-center justify-center text-4xl shadow-inner border border-white/5 flex-shrink-0">${product.img}</div>`
-                    : `<img src="${product.img}" alt="${product.name}" class="w-[6rem] h-[6rem] object-cover rounded-xl shadow-md border border-white/10 flex-shrink-0" onerror="this.src='https://placehold.co/100x100/1e1e1e/ff4d85?text=FV'">`;
+                    : `<img src="${product.img}" loading="lazy" alt="${product.name}" class="w-[6rem] h-[6rem] object-cover rounded-xl shadow-md border border-white/10 flex-shrink-0" onerror="this.src='https://placehold.co/100x100/1e1e1e/ff4d85?text=FV'">`;
                 
                 const priceDisplay = product.sizes.length > 1 
                     ? `<span class="text-pink-brand font-bold text-md">${formatPrice(product.sizes[0].price)} - ${formatPrice(product.sizes[product.sizes.length-1].price)}</span>`
