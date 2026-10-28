@@ -179,14 +179,14 @@ const WHATSAPP_NUMBER = "573248306455"; // Format with country code for link
                 const isEmoji = product.img === '🧇';
                 const imageHtml = isEmoji 
                     ? `<div class="w-20 h-20 bg-gray-100 rounded-xl flex items-center justify-center text-4xl shadow-inner border border-white/5 flex-shrink-0">${product.img}</div>`
-                    : `<img src="${product.img}" alt="${product.name}" class="w-20 h-20 object-cover rounded-xl shadow-md border border-white/10 flex-shrink-0" onerror="this.src='https://placehold.co/100x100/1e1e1e/ff4d85?text=FV'">`;
+                    : `<img src="${product.img}" alt="${product.name}" class="w-[6rem] h-[6rem] object-cover rounded-xl shadow-md border border-white/10 flex-shrink-0" onerror="this.src='https://placehold.co/100x100/1e1e1e/ff4d85?text=FV'">`;
                 
                 const priceDisplay = product.sizes.length > 1 
-                    ? `<span class="text-pink-brand font-bold text-lg">${formatPrice(product.sizes[0].price)} - ${formatPrice(product.sizes[product.sizes.length-1].price)}</span>`
-                    : `<span class="text-pink-brand font-bold text-lg">${formatPrice(product.sizes[0].price)}</span>`;
+                    ? `<span class="text-pink-brand font-bold text-md">${formatPrice(product.sizes[0].price)} - ${formatPrice(product.sizes[product.sizes.length-1].price)}</span>`
+                    : `<span class="text-pink-brand font-bold text-md">${formatPrice(product.sizes[0].price)}</span>`;
 
                 const cardHtml = `
-                    <div class="reveal bg-gray-100 rounded-2xl p-4 flex gap-4 cursor-pointer hover:bg-gray-300 transition-colors border border-white/5 shadow-lg group" onclick="openProductModal('${category}', '${product.id}')" style="transition-delay: ${index * 50}ms">
+                    <div class="reveal bg-gray-100 rounded-2xl p-3 flex items-center gap-4 cursor-pointer hover:bg-gray-300 transition-colors border border-white/5 shadow-lg group" onclick="openProductModal('${category}', '${product.id}')" style="transition-delay: ${index * 50}ms">
                         ${imageHtml}
                         <div class="flex-1 flex flex-col justify-center">
                             <h3 class="font-chewy font-bold text-xl text-pink-brand group-hover:text-pink-brand transition-colors">${product.name}</h3>
@@ -280,7 +280,7 @@ const WHATSAPP_NUMBER = "573248306455"; // Format with country code for link
                 const activeClass = isSelected ? 'border-pink-brand bg-pink-brand/10 text-white' : 'border-white/10 bg-dark-input text-gray-200';
                 
                 const html = `
-                    <button onclick="selectSize(${index})" class="border-2 rounded-xl p-3 text-center transition-colors ${activeClass}">
+                    <button onclick="selectSize(${index})" class="border-2 rounded-xl p-2 text-center transition-colors ${activeClass}">
                         <div class="font-bold text-sm mb-1">${size.name}</div>
                         <div class="text-xs ${isSelected ? 'text-pink-light' : 'text-gray-200'}">${formatPrice(size.price)}</div>
                     </button>

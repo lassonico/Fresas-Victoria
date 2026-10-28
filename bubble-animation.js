@@ -21,8 +21,8 @@ const DEFAULTS = {
     hover: { radius: 9, lift: 8 },
     font: {
         fontFamily: "Poppins, sans-serif", 
-        fontSize: isMobile ? 70 : 80, // Letra más grande y legible en 2 líneas
-        fontWeight: 600,
+        fontSize: isMobile ? 80 : 80, // Letra más grande y legible en 2 líneas
+        fontWeight: 700,
         lineHeight: 1,
     }
 };
@@ -35,8 +35,8 @@ function settingsFor(cfg) {
     const font = cfg.font || {};
     return {
         family: font.fontFamily || "Poppins, sans-serif",
-        fontSize: font.fontSize || 70,
-        weight: font.fontWeight || 300,
+        fontSize: font.fontSize || 80,
+        weight: font.fontWeight || 700,
         fontStyle: font.fontStyle || "normal",
         tracking: 0,
         lineRatio: 1,
