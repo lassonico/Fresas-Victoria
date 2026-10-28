@@ -20,9 +20,9 @@ const DEFAULTS = {
     hoverOn: true,
     hover: { radius: 9, lift: 8 },
     font: {
-        fontFamily: "Chewy, cursive", 
+        fontFamily: "Poppins, sans-serif", 
         fontSize: isMobile ? 70 : 80, // Letra más grande y legible en 2 líneas
-        fontWeight: 400,
+        fontWeight: 600,
         lineHeight: 1,
     }
 };
@@ -36,7 +36,7 @@ function settingsFor(cfg) {
     return {
         family: font.fontFamily || "Poppins, sans-serif",
         fontSize: font.fontSize || 70,
-        weight: font.fontWeight || 100,
+        weight: font.fontWeight || 300,
         fontStyle: font.fontStyle || "normal",
         tracking: 0,
         lineRatio: 1,

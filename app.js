@@ -186,7 +186,7 @@ const WHATSAPP_NUMBER = "573248306455"; // Format with country code for link
                     : `<span class="text-pink-brand font-bold text-lg">${formatPrice(product.sizes[0].price)}</span>`;
 
                 const cardHtml = `
-                    <div class="reveal bg-gray-100 rounded-2xl p-4 flex gap-4 cursor-pointer hover:bg-[#252525] transition-colors border border-white/5 shadow-lg group" onclick="openProductModal('${category}', '${product.id}')" style="transition-delay: ${index * 50}ms">
+                    <div class="reveal bg-gray-100 rounded-2xl p-4 flex gap-4 cursor-pointer hover:bg-gray-300 transition-colors border border-white/5 shadow-lg group" onclick="openProductModal('${category}', '${product.id}')" style="transition-delay: ${index * 50}ms">
                         ${imageHtml}
                         <div class="flex-1 flex flex-col justify-center">
                             <h3 class="font-chewy font-bold text-xl text-pink-brand group-hover:text-pink-brand transition-colors">${product.name}</h3>
