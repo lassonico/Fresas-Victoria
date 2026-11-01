@@ -50,11 +50,9 @@
     <!-- Header  bg-[#121212]/90 -->
     <!-- Header convertido en Banner 100% Pantalla -->
     <!-- Header convertido en Banner 100% Pantalla -->
-    <header class="relative w-full h-screen bg-[url('./bgheader.webp')] bg-cover bg-center bg-no-repeat">
-        
+    <header class="relative w-full h-[100svh] bg-[url('./bgheader.webp')] bg-cover bg-center bg-no-repeat">
         <!-- Capa oscura superpuesta (Overlay) -->
-        <div class="absolute inset-0 bg-black/40 z-0"></div>
-
+        <!-- <div class="absolute inset-0 bg-black/40 z-0"></div> -->
         <!-- Barra de navegación superior -->
         <div class="fixed top-0 left-0 w-full z-50 bg-pink-brand/10 backdrop-blur-md border-b shadow-xl shadow-black/10">
             <div class="container mx-auto px-4 py-3 flex justify-between items-center">
@@ -86,14 +84,14 @@
             </p>
             
             <!-- Botón de llamado a la acción (opcional) -->
-            <button onclick="document.getElementById('category-title').scrollIntoView({behavior: 'smooth'})" class="mt-8 bg-pink-brand hover:bg-pink-dark text-white font-normal py-3 px-12 rounded-full shadow-[0_2px_12px_rgba(255,77,133,0.5)] transition-transform active:scale-95 text-xl">
-                Ver Menú
+            <button onclick="document.getElementById('menu-categorias').scrollIntoView({behavior: 'smooth'})" class="mt-8 bg-pink-brand hover:bg-pink-dark text-white font-bold py-3 px-8 rounded-full shadow-[0_5px_15px_rgba(255,77,133,0.5)] transition-transform active:scale-95 text-lg">Ver Menú
             </button>
         </div>
 
     </header>
     <!-- Category Navigation -->
-    <nav class="container mx-auto px-2 py-6">
+    <!-- Category Navigation -->
+    <nav id="menu-categorias" class="container mx-auto px-4 py-6 scroll-mt-24">
         <div class="flex gap-3 overflow-x-auto pb-2 scrollbar-hide snap-x">
             <button onclick="filterCategory('fresas')" id="btn-cat-fresas" class="cat-btn flex-shrink-0 snap-start bg-pink-brand text-white font-semibold py-2 px-4 rounded-2xl shadow-lg flex items-center gap-2 border border-pink-light/30 transition-transform active:scale-95">
                 <span class="text-xl">🍓</span> Fresas & Conos
