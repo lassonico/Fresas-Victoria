@@ -7,77 +7,88 @@ const WHATSAPP_NUMBER = "573248306455"; // Format with country code for link
                     name: 'Fresa Sencilla',
                     desc: 'Crema de la casa, 3 capas de fresas, 1 topping',
                     sizes: [{name: '12 onzas', price: 14000}, {name: '16 onzas', price: 18000}],
-                    img: './productos/Tradicional.jpg' 
+                    img: './productos/Tradicional.jpg',
+                    bigimage: './productos/bigimages/fresatradicional.webp'
                 },
                 {
                     id: 'f2',
                     name: 'Fresa Durazno',
                     desc: 'Crema, 3 capas fresa, 3 capas durazno, 3 capas queso, Suspiro',
                     sizes: [{name: '12 onzas', price: 17000}, {name: '16 onzas', price: 22000}],
-                    img: './productos/fresaDurazno.jpg' 
+                    img: './productos/fresaDurazno.jpg',
+                    bigimage: './productos/bigimages/fresadurazno.webp'
                 },
                 { 
                     id: 'f3',
                     name: 'Fresa Browni',
                     desc: 'Crema, 3 capas Browni, 3 capas fresas, Chocolate derretido',
                     sizes: [{name: '12 onzas', price: 19000}, {name: '16 onzas', price: 23000}],
-                    img: './productos/fresaBrownie.jpg'
+                    img: './productos/fresaBrownie.jpg',
+                    bigimage: './productos/bigimages/fresabrownie.webp'
                 },
                 { 
                     id: 'f4',
                     name: 'Fresa Triplequeso',
                     desc: 'Crema, 3 capas queso, 3 capas fresa, Chocolate derretido',
                     sizes: [{name: '12 onzas', price: 19000}, {name: '16 onzas', price: 23000}],
-                    img: './productos/fresaTriplequeso.jpg'
+                    img: './productos/fresaTriplequeso.jpg',
+                    bigimage: './productos/bigimages/triplequeso.webp'
                 },
                 { 
                     id: 'f5',
                     name: 'Merengón',
                     desc: 'Queso, suspiros, Fresa, kiwi, Durazno, 1 topping',
                     sizes: [{name: '16 onzas', price: 18000}],
-                    img: './productos/merengon.jpg' 
+                    img: './productos/merengon.jpg',
+                    bigimage: './productos/bigimages/merengon.webp'
                 },
                 { 
                     id: 'f6',
                     name: 'Cono Tropical',
                     desc: 'Galleta crocante, Fresa, Queso, Banano, Durazno, Oreo, Chocolate, Chocorramo, Piazza, M&M',
                     sizes: [{name: 'Único', price: 28000}],
-                    img: './productos/conoTropical.jpg'
+                    img: './productos/conoTropical.jpg',
+                    bigimage: './productos/bigimages/conotropical.webp'
                 },
                 {
                     id: 'f7',
                     name: 'Cono Piazza',
                     desc: 'Galleta crocante, Fresas, Chocolate, Chocorramo, Piazza, M&M',
                     sizes: [{name: 'Único', price: 22000}],
-                    img: './productos/conoPiazza.jpg'
+                    img: './productos/conoPiazza.jpg',
+                    bigimage: './productos/bigimages/conopiazza.webp'
                 },
                 { 
                     id: 'f8',
                     name: 'Oreo Fresas y Banano',
                     desc: 'Crema, Banano, 3 capas oreo, Chocolate, 2 galletas oreo',
                     sizes: [{name: '12 onzas', price: 18000}, {name: '16 onzas', price: 22000}],
-                    img: './productos/OreoFresas.jpg'
+                    img: './productos/OreoFresas.jpg',
+                    bigimage: './productos/bigimages/oreofresas.webp'
                 },
                 {
                     id: 'f9',
                     name: 'Piazza Fresas y Banano',
                     desc: 'Crema, Banano, Fresa, Queso, Piazza',
                     sizes: [{name: '12 onzas', price: 18000}, {name: '16 onzas', price: 22000}],
-                    img: './productos/piazzaFresas.jpg'
+                    img: './productos/piazzaFresas.jpg',
+                    bigimage: './productos/bigimages/piazzafresas.webp'
                 },
                 {
                     id: 'f10', 
                     name: 'Fresa Kiwi',
                     desc: 'Crema, 3 capas queso, 3 capas fresa, Kiwi',
                     sizes: [{name: '12 onzas', price: 20000}, {name: '16 onzas', price: 24000}],
-                    img: './productos/FresaKiwi.jpg'
+                    img: './productos/FresaKiwi.jpg',
+                    bigimage: './productos/bigimages/fresakiwi.webp'
                 },
                 {
                     id: 'f11',
                     name: 'Banaqueso',
                     desc: 'Crema, 3 capas queso, Solo banano, Oreo, Galleta oreo, Chocolate',
                     sizes: [{name: '12 onzas', price: 18000}, {name: '16 onzas', price: 23000}], 
-                    img: './productos/BananQueso.jpg'
+                    img: './productos/BananQueso.jpg',
+                    bigimage: './productos/bigimages/bananqueso.webp'
                 }
             ],
             obleas: [
@@ -86,28 +97,32 @@ const WHATSAPP_NUMBER = "573248306455"; // Format with country code for link
                     name: 'Sencilla',
                     desc: 'Arequipe, Pepitas, Maní, Crema',
                     sizes: [{name: 'Único', price: 4000}],
-                    img: './productos/ObleaSencilla.jpg'
+                    img: './productos/ObleaSencilla.jpg',
+                    bigimage: './productos/bigimages/sencilla.webp'
                 },
                 { 
                     id: 'o2',
                     name: 'Queso y Arequipe',
                     desc: 'Mucho queso, Crema, Arequipe',
                     sizes: [{name: 'Único', price: 10000}],
-                    img: './productos/ObleaQueAre.jpg'
+                    img: './productos/ObleaQueAre.jpg',
+                    bigimage: './productos/bigimages/queare.webp'
                 },
                 {
                     id: 'o3',
                     name: 'Quesuda Completa',
                     desc: 'Queso, Fresas, Oreo, Arequipe, Crema, Pepitas',
                     sizes: [{name: 'Único', price: 15000}],
-                    img: './productos/Quesuda.jpg'
+                    img: './productos/Quesuda.jpg',
+                    bigimage: './productos/bigimages/quesuda.webp'
                 },
                 { 
                     id: 'o4',
                     name: 'Tropical',
                     desc: 'Arequipe, Queso, Fresa, Kiwi, Durazno, Crema, Oreo',
                     sizes: [{name: 'Único', price: 20000}],
-                    img: './productos/Tropical.jpg'
+                    img: './productos/Tropical.jpg',
+                    bigimage: './productos/bigimages/tropical.webp'
                 }
             ],
             micheladas: [
@@ -116,21 +131,24 @@ const WHATSAPP_NUMBER = "573248306455"; // Format with country code for link
                     name: 'Amar y ya',
                     desc: 'Tropical Bosm Piña Maracuyá  Mango Perlas expolivas Limon Bretaña y Sirope',
                     sizes: [{name: '16 onzas', price: 12000}, {name: '24 onzas', price: 15000}],
-                    img: './productos/Amar y ya.jpeg'
+                    img: './productos/Amar y ya.jpeg',
+                    bigimage: './productos/bigimages/amaryya.webp'
                 },
                 {
                     id:'m2',
                     name: 'Berry Fuego',
                     desc: 'Mermelada de fresa mora y cereza Limon Perlas explosivas Bretaña y Sirope',
                     sizes: [{name: '16 onzas', price: 12000}, {name: '24 onzas', price: 15000}],
-                    img: './productos/Berry Fuego.jpeg'
+                    img: './productos/Berry Fuego.jpeg',
+                    bigimage: './productos/bigimages/berryfuego.webp'
                 },
                 {
                     id:'m3',
                     name: 'Miche Grinch',
                     desc: 'Mermelada de kiwi manzana verde y limón Bretaña Perlas explosivas y Sirope',
                     sizes: [{name: '16 onzas', price: 12000}, {name: '24 onzas', price: 15000}],
-                    img: './productos/Miche grinch.jpeg'
+                    img: './productos/Miche grinch.jpeg',
+                    bigimage: './productos/bigimages/michegrinch.webp'
                 }
             ]
         };
@@ -248,15 +266,15 @@ const WHATSAPP_NUMBER = "573248306455"; // Format with country code for link
             
             const modalContent = document.getElementById('modal-product-content');
             const emojiBg = document.getElementById('modal-emoji-bg');
-            const isEmoji = selectedProduct.img === '🧇';
+            const isEmoji = selectedProduct.bigimage === '🧇';
             
             if (isEmoji) {
                 modalContent.style.backgroundImage = 'none';
                 modalContent.style.backgroundColor = '#1a1a1a';
                 emojiBg.classList.remove('hidden');
-                emojiBg.innerText = selectedProduct.img;
+                emojiBg.innerText = selectedProduct.bigimage;
             } else {
-                modalContent.style.backgroundImage = `url('${selectedProduct.img}')`;
+                modalContent.style.backgroundImage = `url('${selectedProduct.bigimage}')`;
                 emojiBg.classList.add('hidden');
             }
 
