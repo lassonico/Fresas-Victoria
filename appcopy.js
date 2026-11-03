@@ -106,7 +106,7 @@ const WHATSAPP_NUMBER = "573248306455"; // Format with country code for link
                     desc: 'Mucho queso, Crema, Arequipe',
                     sizes: [{name: 'Único', price: 10000}],
                     img: './productos/ObleaQueAre.jpg',
-                    bigimage: './productos/bigimages/queare.webp'
+                    bigimage: './productos/ObleaQueAre.jpg'
                 },
                 {
                     id: 'o3',
@@ -114,7 +114,7 @@ const WHATSAPP_NUMBER = "573248306455"; // Format with country code for link
                     desc: 'Queso, Fresas, Oreo, Arequipe, Crema, Pepitas',
                     sizes: [{name: 'Único', price: 15000}],
                     img: './productos/Quesuda.jpg',
-                    bigimage: './productos/bigimages/quesuda.webp'
+                    bigimage: './productos/Quesuda.jpg'
                 },
                 { 
                     id: 'o4',
