@@ -41,16 +41,10 @@
     </script>
 </head>
 <body class="antialiased">
-
-    <!-- Background -->
-    <div class="bg-texture"></div>
-    <svg class="strawberry-bg top-10 left-4 w-24 h-24" viewBox="0 0 512 512"><path d="M256 0C164.7 0 102.3 84.8 102.3 176c0 30.6 8.3 59.8 23.9 84.7l102.6 195.1c4.5 8.6 14.1 14.2 24.2 14.2s19.7-5.6 24.2-14.2l102.6-195.1c15.6-24.9 23.9-54.1 23.9-84.7C403.7 84.8 341.3 0 256 0zm-54.5 160c-13.2 0-24-10.8-24-24s10.8-24 24-24 24 10.8 24 24-10.8 24-24 24zm109 0c-13.2 0-24-10.8-24-24s10.8-24 24-24 24 10.8 24 24-10.8 24-24 24z"/></svg>
-    <svg class="strawberry-bg bottom-20 right-4 w-32 h-32" style="animation-delay: -3s" viewBox="0 0 512 512"><path d="M256 0C164.7 0 102.3 84.8 102.3 176c0 30.6 8.3 59.8 23.9 84.7l102.6 195.1c4.5 8.6 14.1 14.2 24.2 14.2s19.7-5.6 24.2-14.2l102.6-195.1c15.6-24.9 23.9-54.1 23.9-84.7C403.7 84.8 341.3 0 256 0zm-54.5 160c-13.2 0-24-10.8-24-24s10.8-24 24-24 24 10.8 24 24-10.8 24-24 24zm109 0c-13.2 0-24-10.8-24-24s10.8-24 24-24 24 10.8 24 24-10.8 24-24 24z"/></svg>
-
     <!-- Header  bg-[#121212]/90 -->
     <!-- Header convertido en Banner 100% Pantalla -->
     <!-- Header convertido en Banner 100% Pantalla -->
-    <header class="relative w-[100vw] h-[100svh] bg-[url('./bgheader.webp')] bg-cover bg-center bg-no-repeat">
+    <header id="headnav" class="relative w-[100vw] h-[100svh] bg-[url('./bgheader.webp')] bg-cover bg-center bg-no-repeat">
         <!-- Capa oscura superpuesta (Overlay) -->
         <!-- <div class="absolute inset-0 bg-black/40 z-0"></div> -->
         <!-- Barra de navegación superior -->
@@ -58,7 +52,9 @@
             <div class="container mx-auto px-4 py-3 flex justify-between items-center">
                 <div class="flex items-center gap-3">
                     <div class="w-[70px] h-[70px] rounded-full flex items-center justify-center">
-                        <img src="logo.png" alt="Fresas Victoria" class="w-full h-full object-contain" onerror="this.src='https://placehold.co/100x100/ff4d85/ffffff?text=FV'">
+                        <button onclick="document.getElementById('headnav').scrollIntoView({behavior: 'smooth'})">
+                            <img src="logo.png" alt="Fresas Victoria" class="w-full h-full object-contain" onerror="this.src='https://placehold.co/100x100/ff4d85/ffffff?text=FV'">
+                        </button>
                     </div>
                 </div>
                 <div>

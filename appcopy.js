@@ -64,7 +64,7 @@ const WHATSAPP_NUMBER = "573248306455"; // Format with country code for link
                     desc: 'Crema, Banano, 3 capas oreo, Chocolate, 2 galletas oreo',
                     sizes: [{name: '12 onzas', price: 18000}, {name: '16 onzas', price: 22000}],
                     img: './productos/OreoFresas.jpg',
-                    bigimage: './productos/bigimages/oreofresas.webp'
+                    bigimage: './productos/bigimages/oreofresa.webp'
                 },
                 {
                     id: 'f9',
@@ -72,7 +72,7 @@ const WHATSAPP_NUMBER = "573248306455"; // Format with country code for link
                     desc: 'Crema, Banano, Fresa, Queso, Piazza',
                     sizes: [{name: '12 onzas', price: 18000}, {name: '16 onzas', price: 22000}],
                     img: './productos/piazzaFresas.jpg',
-                    bigimage: './productos/bigimages/piazzafresas.webp'
+                    bigimage: './productos/bigimages/piazzafresa.webp'
                 },
                 {
                     id: 'f10', 
@@ -88,7 +88,7 @@ const WHATSAPP_NUMBER = "573248306455"; // Format with country code for link
                     desc: 'Crema, 3 capas queso, Solo banano, Oreo, Galleta oreo, Chocolate',
                     sizes: [{name: '12 onzas', price: 18000}, {name: '16 onzas', price: 23000}], 
                     img: './productos/BananQueso.jpg',
-                    bigimage: './productos/bigimages/bananqueso.webp'
+                    bigimage: './productos/bigimages/bananaqueso.webp'
                 }
             ],
             obleas: [
