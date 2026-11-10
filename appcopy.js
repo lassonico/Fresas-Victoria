@@ -1,4 +1,6 @@
 const WHATSAPP_NUMBER = "573248306455"; // Format with country code for link
+const NEQDAVI_NUMBER = "3214535063"; 
+const LLAVE_NUMBER = "@3214535063"; 
 
         const productsData = {
             fresas: [
@@ -454,7 +456,7 @@ const WHATSAPP_NUMBER = "573248306455"; // Format with country code for link
             } else {
                 detailsDiv.classList.remove('hidden');
                 // Simulate different numbers or use the same for all wallets
-                numSpan.innerText = "3248306455"; 
+                numSpan.innerText = NEQDAVI_NUMBER; 
             }
         }
 
